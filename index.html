@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="cont-general">
+
+
+        
+
+        <div id="datos" class="">
+            <a href="#" class="logo"><img src="img/logo-worldskills.png" alt="Logo"></a>
+           
+                <input type="text" placeholder="Nombre de la Habilidad:" id="habilidad-input">
+                <input type="text" placeholder="Nombre del Módulo:" id="modulo-input">
+                <div class="time-inputs">
+                    <input type="number" class="tiempo" id="horas-input" placeholder="Horas" >
+                    <input type="number" class="tiempo" id="minutos-input" placeholder="Minutos" >
+                    <input type="number" class="tiempo" id="segundos-input" placeholder="Segundos" >
+                </div>
+                
+                <button id="startButton">EMPEZAR</button>
+            
+        </div>
+
+        <div class="count-down disabled" id="count-down">
+
+            <div class="datos-habilidad">
+                <a href="#" class="logo"><img src="img/logo-worldskills.png" alt="Logo"></a>
+                <h1 id="nombre-habilidad">Nombre Habilidad</h1>
+                <h2 id="nombre-modulo">Nombre del Módulo</h2>
+                
+            </div>
+
+            <div id="time">
+                <p id="horas">00</p>
+                <p id="minutos">00</p>
+                <p id="segundos" data-type="seconds">00</p>
+            </div>
+            <h3 class="finish disabled animate__animated animate__fadeIn">Time Over!</h3>
+            <div class="disabled reload-btn  animate__animated animate__fadeIn">
+                <img src="./img/deshacer.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
